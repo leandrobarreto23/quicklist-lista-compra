@@ -16,19 +16,48 @@
     </header>
     <main>
       <h2>Compras da semana</h2>
-      <div class="input-wrapper">
-        <label for="add-item" class="sr-only">Adicione um novo item</label>
-        <input type="text" id="add-item" placeholder="Adicione um novo item">
+      <div class="input-text flex gap-16">
+        <div>
+          <label for="add-item" class="sr-only">Adicione um novo item</label>
+          <input type="text" id="add-item" placeholder="Adicione um novo item">
+        </div>
+        <button>Adicionar item</button>
       </div>
-      <button>Adicionar item</button>
-      <div id="list">
+      <div id="list" class="flex fd-column gap-12">
         
-        <div class="item-list">
-          <div class="radio-wrapper">
+        <div class="item-list flex space-between">
+          <div class="radio-wrapper flex gap-12">
             <input type="checkbox" name="item-name" id="item-name">
             <label for="item-name" class="sr-only">Pão de forma</label>
+            <span>Pão de forma</span>
           </div>
-          <span>Pão de forma</span>
+          <img src="assets/icons/trash.svg" alt="ícone de lixeira">
+        </div>
+
+        <div class="item-list flex space-between">
+          <div class="radio-wrapper flex gap-12">
+            <input type="checkbox" name="item-name" id="item-name">
+            <label for="item-name" class="sr-only">Café preto</label>
+            <span>Café preto</span>
+          </div>
+          <img src="assets/icons/trash.svg" alt="ícone de lixeira">
+        </div>
+        
+        <div class="item-list flex space-between">
+          <div class="radio-wrapper flex gap-12">
+            <input type="checkbox" name="item-name" id="item-name">
+            <label for="item-name" class="sr-only">Suco de laranja</label>
+            <span>Suco de laranja</span>
+          </div>
+          <img src="assets/icons/trash.svg" alt="ícone de lixeira">
+        </div>
+
+        <div class="item-list flex space-between">
+          <div class="radio-wrapper flex gap-12">
+            <input type="checkbox" name="item-name" id="item-name">
+            <label for="item-name" class="sr-only">Bolacha</label>
+            <span>Bolacha</span>
+          </div>
           <img src="assets/icons/trash.svg" alt="ícone de lixeira">
         </div>
 

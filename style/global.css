@@ -34,6 +34,7 @@
 body {
   font-size: 1.6rem;
   font-family: var(--ff-inter);
+  background-color: var(--bg-primary);
 }
 
 #app {
