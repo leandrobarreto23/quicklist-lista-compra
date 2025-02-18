@@ -5,23 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quicklist</title>
   <link rel="stylesheet" href="style/index.css">
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
 </head>
 <body>
-  <header>
-    <h1>
-      <img src="assets/images/logo.svg" alt="logo da Quicklist">
-    </h1>
-  </header>
-  <main>
-    <h2>Compras da semana</h2>
-    <div class="input-wrapper">
-      <label for="add-item"></label>
-      <input type="text" id="add-item" placeholder="Adicione um novo item">
-    </div>
-    <button>Adicionar item</button>
-    <div id="description">
-      
-    </div>
-  </main>
+  <div id="app">
+    <header>
+      <h1>
+        <img src="assets/images/logo.svg" alt="logo da Quicklist">
+      </h1>
+    </header>
+    <main>
+      <h2>Compras da semana</h2>
+      <div class="input-wrapper">
+        <label for="add-item" class="sr-only">Adicione um novo item</label>
+        <input type="text" id="add-item" placeholder="Adicione um novo item">
+      </div>
+      <button>Adicionar item</button>
+      <div id="list">
+        
+        <div class="item-list">
+          <div class="radio-wrapper">
+            <input type="checkbox" name="item-name" id="item-name">
+            <label for="item-name" class="sr-only">Pão de forma</label>
+          </div>
+          <span>Pão de forma</span>
+          <img src="assets/icons/trash.svg" alt="ícone de lixeira">
+        </div>
+
+      </div>
+    </main>
+    <footer>
+      <div id="alert" class="flex align-center space-between">
+        <div class="flex gap-8 align-center">
+          <i class="ph-fill ph-warning-circle"></i>
+          <span>O item foi removido da lista</span>
+        </div>
+        <i class="ph ph-x"></i>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>

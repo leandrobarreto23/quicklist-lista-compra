@@ -1,0 +1,16 @@
+footer {
+  margin-top: 3.6rem;
+}
+
+#alert {
+  padding: 1.2rem;
+  max-width: 62rem;
+  border-radius: 1.2rem;
+  color: var(--always-white);
+  background-color: var(--color-danger);
+
+  & i {
+    color: var(--always-white);
+    cursor: pointer;
+  }
+}

@@ -33,4 +33,11 @@
 
 body {
   font-size: 1.6rem;
+  font-family: var(--ff-inter);
+}
+
+#app {
+  margin: 0 auto;
+  max-width: 69.1rem;
+  padding: 2.5rem 3.2rem;
 }
