@@ -1,5 +1,10 @@
 footer {
   margin-top: 3.6rem;
+  visibility: hidden;
+}
+
+.show-alert {
+  visibility: visible;
 }
 
 #alert {

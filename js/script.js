@@ -2,6 +2,8 @@
 const inputItem = document.getElementById("add-item")
 const form = document.querySelector("form")
 const list = document.getElementById("list")
+const footer = document.querySelector("footer")
+
 
 // manipulando o input para receber somente texto
 inputItem.addEventListener("input", () => {
@@ -30,7 +32,9 @@ form.onsubmit = (e) => {
         <label for="${inputItem.value}" >${inputItem.value}</label>
         <span class="sr-only">${inputItem.value}</span>
       </div>
-      <img src="assets/icons/trash.svg" alt="ícone de lixeira">
+      <button class="btn-remove">
+        <img src="assets/icons/trash.svg" alt="ícone de lixeira">
+      </button>
       `
     // atribui as classes de estilizacao
     newItem.className = "item-list flex space-between";
@@ -42,4 +46,9 @@ form.onsubmit = (e) => {
   inputItem.value = ""
   // foca no input novamente
   inputItem.focus()
+}
+
+// exibe o alerta de item removido da lista
+function showAlert() {
+  footer.classList.add("show-alert")
 }

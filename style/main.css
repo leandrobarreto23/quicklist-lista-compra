@@ -55,4 +55,9 @@ h2 {
   & img {
     cursor: pointer;
   }
+
+  & .btn-remove {
+    background: none;
+    border: none;
+  }
 }
