@@ -26,9 +26,9 @@ form.onsubmit = (e) => {
     // adiciona o conteudo desse elemento
     newItem.innerHTML = `
       <div class="radio-wrapper flex gap-12">
-        <input type="checkbox" name="${inputItem.value}">
-        <label for="${inputItem.value}" class="sr-only">${inputItem.value}</label>
-        <span>${inputItem.value}</span>
+        <input type="checkbox" name="${inputItem.value}" id="${inputItem.value}">
+        <label for="${inputItem.value}" >${inputItem.value}</label>
+        <span class="sr-only">${inputItem.value}</span>
       </div>
       <img src="assets/icons/trash.svg" alt="ícone de lixeira">
       `
